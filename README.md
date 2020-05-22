@@ -315,3 +315,20 @@ public class JobConfiguration {
 ``` 
 
 ## Running the demo
+For running the demo, you need to have the following environment variables declared in your system defining your MongoDB connection parameters
+ie:
+```shell script
+MONGODB_HOST=localhost
+MONGODB_PORT=27017
+MONGODB_USER=your-mongodb-user
+MONGODB_PASSWORD=your-mongodb-password
+MONGODB_DATABASE=database-name
+```
+
+Once you've got these env vars populated, you can run the Spring Boot application via _command line_:
+```shell script
+cd quartz-spring-boot-mongodb
+mvn clean install
+java -jar target/quartzintro-0.0.1-SNAPSHOT.jar
+```
+or running __QuartzIntroApplication__ with your favourite _IDE_
